@@ -1,0 +1,49 @@
+CREATE TABLE
+films (
+    name VARCHAR (355),
+    film_id serial PRIMARY KEY,
+    country VARCHAR (355),
+    Gross VARCHAR,
+    year VARCHAR
+);
+
+INSERT INTO
+    films
+VALUES
+    ('Star Wars: Episode III - Revenge of the Sith', 111, 'USA', 849997605, 2005),
+    ('The Lord of the Rings: The Return of the King', 112, 'USA', 1119110941, 2003),
+    ('The Matrix', 113, 'USA', 463517383, 1999),
+    ('Titanic', 114, 'USA', 2185372302, 1997),
+    ('Rush', 115, 'USA', 90247624, 2013);
+
+CREATE TABLE
+persons (
+    person_id serial PRIMARY KEY,
+    name VARCHAR (355)
+);
+
+INSERT INTO
+    persons
+VALUES
+    (211, 'Ewan McGregor'),
+    (212, 'Viggo Mortensen'),
+    (213, 'Keanu Reeves'),
+    (214, 'Leonardo DiCaprio'),
+    (215, 'Chris Hemsworth');
+
+
+CREATE TABLE
+persons2content (
+    person_id1 VARCHAR,
+    content_id1 VARCHAR,
+    type VARCHAR (355)
+);
+
+INSERT INTO
+    persons2content
+VALUES
+    (211, 111, 'actor'),
+    (212, 112, 'actor'),
+    (213, 113, 'actor'),
+    (214, 114, 'actor'),
+    (215, 115, 'actor');
